@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Playhouse Alberton | Indoor playground, arcade and birthday parties</title>
+<meta name="description" content="Indoor play, arcade games, a restaurant and birthday parties in Newmarket, Alberton. Book a play session online or WhatsApp 011 908 0096.">
+<meta name="theme-color" content="#2b4dff">
+<meta property="og:title" content="The Playhouse Alberton">
+<meta property="og:description" content="Indoor play, arcade games and birthday parties in Alberton. Book online or WhatsApp us.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23ffc933'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle'%3E%F0%9F%9B%9D%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2b4dff;--sun:#ffc933;--coral:#ff5c5c;--mint:#3dd6a5;--ink:#14163a;--paper:#f4f7ff;--r:26px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;padding-bottom:78px}
+h1,h2,h3,.btn,.brand{font-family:Fredoka,"Trebuchet MS",system-ui,sans-serif}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 36px));margin-inline:auto}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+header{position:sticky;top:0;z-index:20;background:var(--blue);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{font-weight:700;font-size:22px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--sun);font-style:normal;font-size:20px}
+nav{display:flex;align-items:center;gap:22px;font-weight:600;font-size:15px}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline;text-underline-offset:4px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:3px solid var(--ink);border-radius:999px;padding:13px 24px;font-weight:600;font-size:18px;text-decoration:none;color:var(--ink);background:#fff;box-shadow:0 5px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--ink)}
+.btn:active{transform:translateY(5px);box-shadow:0 0 0 var(--ink)}
+.btn.sun{background:var(--sun)}
+.btn.coral{background:var(--coral);color:#fff}
+.btn.mint{background:var(--mint)}
+
+.hero{background:var(--blue);color:#fff;padding:54px 0 96px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}
+h1{font-size:clamp(46px,8.2vw,104px);line-height:.95;margin:0 0 22px;letter-spacing:-.02em;font-weight:700}
+.hero p{font-size:clamp(18px,2vw,22px);max-width:34ch;margin:0 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.play{position:relative;aspect-ratio:1;max-width:380px;justify-self:center;width:100%}
+.blob{position:absolute;border:3px solid var(--ink);display:grid;place-items:center;font-size:58px;box-shadow:0 8px 0 var(--ink)}
+.b1{inset:6% 22% 30% 4%;background:var(--sun);border-radius:50%;transform:rotate(-6deg);font-size:96px}
+.b2{inset:46% 4% 4% 38%;background:var(--coral);border-radius:34px;transform:rotate(8deg)}
+.b3{inset:58% 62% 6% 6%;background:var(--mint);border-radius:50% 50% 14px 14px;transform:rotate(-10deg);font-size:46px}
+.rating{position:absolute;right:0;top:0;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:Fredoka,sans-serif;font-weight:700;line-height:1.1;transform:rotate(7deg);box-shadow:0 5px 0 var(--ink);text-align:center}
+.rating small{display:block;font-weight:500;font-size:13px}
+.wave{position:absolute;left:0;right:0;bottom:-1px;height:46px;background:var(--paper);clip-path:polygon(0 60%,8% 35%,16% 60%,24% 35%,32% 60%,40% 35%,48% 60%,56% 35%,64% 60%,72% 35%,80% 60%,88% 35%,96% 60%,100% 45%,100% 100%,0 100%)}
+
+section{padding:72px 0}
+h2{font-size:clamp(32px,4.6vw,52px);line-height:1.05;margin:0 0 14px;font-weight:700}
+.lead{max-width:56ch;margin:0 0 36px;color:#41456e}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.tile{border:3px solid var(--ink);border-radius:var(--r);padding:26px;box-shadow:0 7px 0 var(--ink)}
+.tile .em{font-size:44px;display:block;margin-bottom:6px}
+.tile h3{margin:0 0 6px;font-size:28px}
+.tile p{margin:0;max-width:40ch}
+.t1{grid-column:span 4;background:var(--sun)}
+.t2{grid-column:span 2;background:var(--mint)}
+.t3{grid-column:span 2;background:#fff}
+.t4{grid-column:span 4;background:var(--coral);color:#fff}
+
+.party{background:var(--sun);border-block:3px solid var(--ink)}
+.party .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px}
+.party p{margin:0;max-width:52ch}
+
+.visit .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}
+.card{background:#fff;border:3px solid var(--ink);border-radius:var(--r);padding:28px;box-shadow:0 7px 0 var(--ink)}
+dl{margin:18px 0 22px}
+dt{font-family:Fredoka,sans-serif;font-weight:600;font-size:20px;margin-top:16px}
+dd{margin:2px 0 0}
+dd a{font-weight:600}
+.map{width:100%;height:100%;min-height:380px;border:3px solid var(--ink);border-radius:var(--r);box-shadow:0 7px 0 var(--ink);background:#dfe6ff}
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.social a{border:2px solid var(--ink);border-radius:999px;padding:6px 14px;font-weight:600;font-size:15px;text-decoration:none;background:var(--paper)}
+.social a:hover{background:var(--sun)}
+
+footer{background:var(--ink);color:#c9cdf5;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer a{color:#fff}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(244,247,255,.94);backdrop-filter:blur(10px);border-top:3px solid var(--ink)}
+.dock .btn{flex:1;padding:11px 10px;font-size:17px}
+
+@media (max-width:860px){
+.hero .wrap,.visit .wrap{grid-template-columns:1fr}
+.play{max-width:300px}
+nav a:not(.btn){display:none}
+.t1,.t2,.t3,.t4{grid-column:span 6}
+section{padding:54px 0}
+}
+@media (min-width:861px){.dock{display:none}body{padding-bottom:0}}
+@media (prefers-reduced-motion:no-preference){
+.b1{animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:rotate(-6deg) translateY(-10px)}}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="brand" href="#top"><i>🛝</i>The Playhouse</a>
+<nav aria-label="Main">
+<a href="#inside">What's inside</a>
+<a href="#parties">Parties</a>
+<a href="#visit">Visit us</a>
+<a class="btn sun" href="https://www.dineplan.com/widgetframe/PC45yY7k" target="_blank" rel="noopener" style="padding:8px 18px;font-size:16px">Book a session</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<div>
+<h1>Big fun for little people.</h1>
+<p>Indoor play, arcade games and birthday parties in Alberton. Book a session online or send us a WhatsApp.</p>
+<div class="actions">
+<a class="btn sun" href="https://www.dineplan.com/widgetframe/PC45yY7k" target="_blank" rel="noopener">Book a play session</a>
+<a class="btn" href="https://wa.me/27119080096?text=Hi%20Playhouse%2C%20I%20have%20a%20question" target="_blank" rel="noopener">WhatsApp us</a>
+</div>
+</div>
+<div class="play" aria-hidden="true">
+<div class="blob b1">🛝</div>
+<div class="blob b2">🎮</div>
+<div class="blob b3">🎈</div>
+<div class="rating">4.1 ★<small>964 Google reviews</small></div>
+</div>
+</div>
+<div class="wave"></div>
+</section>
+
+<section id="inside">
+<div class="wrap">
+<h2>Everything under one roof</h2>
+<p class="lead">Kids play, parents eat and relax. Here's what you'll find at The Playhouse.</p>
+<div class="bento">
+<div class="tile t1"><span class="em">🛝</span><h3>Indoor play</h3><p>A big indoor playground where kids can climb, run and burn off energy, whatever the weather.</p></div>
+<div class="tile t2"><span class="em">🕹️</span><h3>Arcade games</h3><p>Arcade machines for a bit of friendly competition.</p></div>
+<div class="tile t3"><span class="em">🍕</span><h3>Restaurant</h3><p>Eat on site while the kids play.</p></div>
+<div class="tile t4"><span class="em">🎂</span><h3>Birthday parties</h3><p>Celebrate with us. Check party options and book your date online.</p></div>
+</div>
+</div>
+</section>
+
+<section class="party" id="parties">
+<div class="wrap">
+<div>
+<h2>Planning a birthday?</h2>
+<p>See what's available and request your date on our party booking page. Got a question first? WhatsApp us the date and how many kids are coming.</p>
+</div>
+<div class="actions">
+<a class="btn coral" href="https://playhouse.our-venue.com" target="_blank" rel="noopener">Plan a party</a>
+<a class="btn" href="https://wa.me/27119080096?text=Hi%20Playhouse%2C%20I%27d%20like%20to%20ask%20about%20a%20birthday%20party" target="_blank" rel="noopener">Ask on WhatsApp</a>
+</div>
+</div>
+</section>
+
+<section class="visit" id="visit">
+<div class="wrap">
+<div>
+<h2>Come and play</h2>
+<div class="card">
+<dl>
+<dt>Where</dt>
+<dd>Unit 1, SS Business Park<br>40 Heidelberg Ave, Newmarket<br>Alberton, 1449</dd>
+<dt>When</dt>
+<dd>Opens at 10 am on Sundays. WhatsApp us for other days.</dd>
+<dt>Talk to us</dt>
+<dd><a href="https://wa.me/27119080096" target="_blank" rel="noopener">WhatsApp 011 908 0096</a></dd>
+</dl>
+<div class="actions">
+<a class="btn mint" href="https://maps.google.com/?q=The+Playhouse+Alberton" target="_blank" rel="noopener">Get directions</a>
+</div>
+<p style="margin:22px 0 8px;font-weight:600">Follow us</p>
+<div class="social">
+<a href="https://www.instagram.com/theplayhousealberton/" target="_blank" rel="noopener">Instagram</a>
+<a href="https://www.facebook.com/theplayhouse1" target="_blank" rel="noopener">Facebook</a>
+<a href="https://tiktok.com/@the.playhouse.alb" target="_blank" rel="noopener">TikTok</a>
+</div>
+</div>
+</div>
+<iframe class="map" title="Map showing The Playhouse Alberton" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=The+Playhouse+Alberton,+40+Heidelberg+Ave,+Newmarket,+Alberton&output=embed"></iframe>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<span>© <span id="y"></span> The Playhouse Alberton. Concept design, not the official website.</span>
+<span><a href="https://theplayhouse.co.za/updates/">Updates</a> · <a href="https://theplayhouse.co.za/events/">Events</a> · <a href="https://theplayhouse.co.za/outreach/">Sunshine Programme</a></span>
+</div>
+</footer>
+
+<div class="dock">
+<a class="btn sun" href="https://www.dineplan.com/widgetframe/PC45yY7k" target="_blank" rel="noopener">Book a session</a>
+<a class="btn mint" href="https://wa.me/27119080096" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
