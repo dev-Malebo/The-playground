@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extra rides | The Playhouse Alberton</title>
+<meta name="description" content="Mini train, aerial zipline and kiddie kars at The Playhouse Alberton.">
+<meta name="theme-color" content="#2b4dff">
+<meta property="og:title" content="The Playhouse Alberton">
+<meta property="og:description" content="Indoor play, arcade games and birthday parties in Alberton. Book online or WhatsApp us.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23ffc933'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle'%3E%F0%9F%9B%9D%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2b4dff;--sun:#ffc933;--coral:#ff5c5c;--mint:#3dd6a5;--ink:#14163a;--paper:#f4f7ff;--r:26px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;padding-bottom:78px}
+h1,h2,h3,.btn,.brand{font-family:Fredoka,"Trebuchet MS",system-ui,sans-serif}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 36px));margin-inline:auto}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+header{position:sticky;top:0;z-index:20;background:var(--blue);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{font-weight:700;font-size:22px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--sun);font-style:normal;font-size:20px}
+nav{display:flex;align-items:center;gap:22px;font-weight:600;font-size:15px}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline;text-underline-offset:4px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:3px solid var(--ink);border-radius:999px;padding:13px 24px;font-weight:600;font-size:18px;text-decoration:none;color:var(--ink);background:#fff;box-shadow:0 5px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--ink)}
+.btn:active{transform:translateY(5px);box-shadow:0 0 0 var(--ink)}
+.btn.sun{background:var(--sun)}
+.btn.coral{background:var(--coral);color:#fff}
+.btn.mint{background:var(--mint)}
+
+.hero{background:linear-gradient(90deg,rgba(20,22,58,.6) 0%,rgba(20,22,58,.34) 55%,rgba(20,22,58,.04) 100%),var(--hero) center/cover no-repeat var(--blue);color:#fff;padding:54px 0 96px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}
+h1{text-shadow:0 2px 20px rgba(20,22,58,.55);font-size:clamp(46px,8.2vw,104px);line-height:.95;margin:0 0 22px;letter-spacing:-.02em;font-weight:700}
+.hero p{font-size:clamp(18px,2vw,22px);max-width:34ch;margin:0 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.play{position:relative;aspect-ratio:1;max-width:380px;justify-self:center;width:100%}
+.blob{position:absolute;border:3px solid var(--ink);display:grid;place-items:center;font-size:58px;box-shadow:0 8px 0 var(--ink)}
+.b1{inset:6% 22% 30% 4%;background:var(--sun);border-radius:50%;transform:rotate(-6deg);font-size:96px}
+.b2{inset:46% 4% 4% 38%;background:var(--coral);border-radius:34px;transform:rotate(8deg)}
+.b3{inset:58% 62% 6% 6%;background:var(--mint);border-radius:50% 50% 14px 14px;transform:rotate(-10deg);font-size:46px}
+.rating{position:absolute;right:0;top:0;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:18px;padding:8px 14px;font-family:Fredoka,sans-serif;font-weight:700;line-height:1.1;transform:rotate(7deg);box-shadow:0 5px 0 var(--ink);text-align:center}
+.rating small{display:block;font-weight:500;font-size:13px}
+.wave{position:absolute;left:0;right:0;bottom:-1px;height:46px;background:var(--paper);clip-path:polygon(0 60%,8% 35%,16% 60%,24% 35%,32% 60%,40% 35%,48% 60%,56% 35%,64% 60%,72% 35%,80% 60%,88% 35%,96% 60%,100% 45%,100% 100%,0 100%)}
+
+section{padding:72px 0}
+h2{font-size:clamp(32px,4.6vw,52px);line-height:1.05;margin:0 0 14px;font-weight:700}
+.lead{max-width:56ch;margin:0 0 36px;color:#41456e}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.tile{border:3px solid var(--ink);border-radius:var(--r);padding:26px;box-shadow:0 7px 0 var(--ink)}
+.tile .em{font-size:44px;display:block;margin-bottom:6px}
+.sl{width:1em;height:1em;display:block}
+.tile h3{margin:0 0 6px;font-size:28px}
+.tile p{margin:0;max-width:40ch}
+.t1{grid-column:span 4;background:var(--sun)}
+.t2{grid-column:span 2;background:var(--mint)}
+.t3{grid-column:span 2;background:#fff}
+.t4{grid-column:span 4;background:var(--coral);color:#fff}
+
+.party{background:var(--sun);border-block:3px solid var(--ink)}
+.party .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px}
+.party p{margin:0;max-width:52ch}
+
+.visit .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}
+.card{background:#fff;border:3px solid var(--ink);border-radius:var(--r);padding:28px;box-shadow:0 7px 0 var(--ink)}
+dl{margin:18px 0 22px}
+dt{font-family:Fredoka,sans-serif;font-weight:600;font-size:20px;margin-top:16px}
+dd{margin:2px 0 0}
+dd a{font-weight:600}
+.map{width:100%;height:100%;min-height:380px;border:3px solid var(--ink);border-radius:var(--r);box-shadow:0 7px 0 var(--ink);background:#dfe6ff}
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.social a{border:2px solid var(--ink);border-radius:999px;padding:6px 14px;font-weight:600;font-size:15px;text-decoration:none;background:var(--paper)}
+.social a:hover{background:var(--sun)}
+
+footer{background:var(--ink);color:#c9cdf5;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer a{color:#fff}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(244,247,255,.94);backdrop-filter:blur(10px);border-top:3px solid var(--ink)}
+.dock .btn{flex:1;padding:11px 10px;font-size:17px}
+
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.price{background:#fff;border:3px solid var(--ink);border-radius:var(--r);padding:24px;box-shadow:0 7px 0 var(--ink)}
+.price h3{margin:0 0 8px;font-size:24px}
+.big{font-family:Fredoka,sans-serif;font-weight:700;font-size:46px;line-height:1}
+.was{display:block;font-size:15px;color:#41456e;margin:4px 0 12px}
+.price.sun{background:var(--sun)}.price.mint{background:var(--mint)}
+.price ul,.card ul{margin:10px 0 0;padding-left:20px}
+.price li,.card li{margin:4px 0}
+.note{font-size:14px;color:#41456e;margin:22px 0 0}
+.sub{font-size:26px;margin:46px 0 16px}
+.steps{counter-reset:s;list-style:none;padding:0!important;margin:0}
+.steps li{counter-increment:s;display:flex;gap:12px;align-items:flex-start;margin:0 0 12px}
+.steps li::before{content:counter(s);flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--sun);border:2px solid var(--ink);font-family:Fredoka,sans-serif;font-weight:700}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 36px;margin:18px 0 0;padding:0;list-style:none}
+.menu li{display:flex;justify-content:space-between;gap:14px;border-bottom:2px dotted #b9c0ee;padding:6px 0;margin:0}
+.menu b{white-space:nowrap}
+.cafe{background:#fff;border-block:3px solid var(--ink)}
+.rules{background:var(--ink);color:#fff}
+.rules .card{color:var(--ink)}
+.tips{position:relative;overflow:hidden;display:flex;align-items:center;gap:14px;max-width:480px;min-height:98px;margin:0 0 30px;padding:16px 14px 20px 16px;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:20px;box-shadow:0 6px 0 var(--ink);cursor:pointer}
+.tip-ico{flex:none;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--sun);border:3px solid var(--ink);font-size:26px}
+.tip-txt{flex:1;font-weight:600;font-size:18px;line-height:1.35}
+.tip-ico,.tip-txt{transition:opacity .25s,transform .25s}
+.tip-ico.out,.tip-txt.out{opacity:0;transform:translateY(8px)}
+.prog{position:absolute;left:0;bottom:0;height:6px;width:0;background:var(--coral)}
+.tip-btn{flex:none;align-self:flex-start;width:32px;height:32px;border:2px solid var(--ink);border-radius:50%;background:var(--paper);font-size:12px;cursor:pointer;color:var(--ink)}
+.ic{width:1.3em;height:1.3em;flex:none}
+.btn.ink{background:var(--ink);color:#fff}
+.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:20px}
+.stack .btn{justify-content:flex-start}
+.fb{display:block;width:100%;max-width:500px;height:520px;border:0;border-radius:14px;background:#fff;margin:0 auto}
+@media (max-width:860px){
+.hero{background-image:linear-gradient(rgba(20,22,58,.46),rgba(20,22,58,.46)),var(--hero)}
+.g3,.g2,.menu{grid-template-columns:1fr}
+.hero .wrap,.visit .wrap{grid-template-columns:1fr}
+.play{max-width:300px}
+nav a:not(.btn){display:none}
+.t1,.t2,.t3,.t4{grid-column:span 6}
+section{padding:54px 0}
+}
+@media (min-width:861px){.dock{display:none}body{padding-bottom:0}}
+@media (prefers-reduced-motion:no-preference){
+.b1{animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:rotate(-6deg) translateY(-10px)}}
+}
+
+a.tile{display:block;text-decoration:none;transition:transform .15s,box-shadow .15s}
+a.tile:not(.t4){color:var(--ink)}
+a.tile:hover,a.tile:focus-visible{transform:translateY(-4px);box-shadow:0 11px 0 var(--ink)}
+a.tile:focus-visible{outline:4px solid var(--ink);outline-offset:4px}
+a.tile:active{transform:translateY(3px);box-shadow:0 3px 0 var(--ink)}
+.go{display:inline-block;margin-top:14px;font-family:Fredoka,"Trebuchet MS",system-ui,sans-serif;font-weight:700;border-bottom:3px solid currentColor}
+
+.phead{padding:44px 0 0}.phead h1{font-size:clamp(34px,6vw,56px);margin:12px 0 8px;line-height:1.1}
+.back{display:inline-block;font-weight:700;text-decoration:none;border-bottom:3px solid var(--sun)}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:26px}.gal .wide{grid-column:1/-1}
+.gal img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border:3px solid var(--ink);border-radius:var(--r);box-shadow:0 7px 0 var(--ink)}
+.ph{aspect-ratio:4/3;border:3px dashed var(--ink);border-radius:var(--r);display:grid;place-items:center;background:#fff;font-weight:600;text-align:center;padding:12px}
+@media(max-width:640px){.gal{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="brand" href="playhouse.html#top"><i><svg class="sl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18"/><path d="M5 6c8 0 8 12 16 12"/><path d="M5 11h3M5 16h3"/><path d="M3 21h18"/></svg></i>The Playhouse</a>
+<nav aria-label="Main">
+<a href="playhouse.html#prices">Prices</a>
+<a href="playhouse.html#parties">Parties</a>
+<a href="playhouse.html#sunshine">Sunshine</a>
+<a href="playhouse.html#cafe">Café</a>
+<a href="playhouse.html#social">Follow</a>
+<a href="playhouse.html#visit">Visit us</a>
+<a class="btn sun" href="https://www.dineplan.com/widgetframe/PC45yY7k" target="_blank" rel="noopener" style="padding:8px 18px;font-size:16px">Book a session</a>
+</nav>
+</div>
+</header>
+<main id="top">
+<section class="phead"><div class="wrap"><a class="back" href="playhouse.html">&larr; Back to home</a><h1>Extra rides</h1><p class="lead">Mini train, aerial zipline and kiddie kars, on top of the play area.</p></div></section>
+<section style="padding-top:30px"><div class="wrap"><div class="grid g3"><div><div class="ph">Photo coming soon</div><div class="price" style="margin-top:20px"><h3>Mini train</h3><span class="big">R20</span><span class="was">Hop on for a ride around the venue.</span></div></div><div><div class="ph">Photo coming soon</div><div class="price" style="margin-top:20px"><h3>Aerial zipline</h3><span class="big">R20</span><span class="was">Runs at 11 am, 1 pm and 3 pm.</span></div></div><div><div class="ph">Photo coming soon</div><div class="price" style="margin-top:20px"><h3>Kiddie kars</h3><span class="big">R40</span><span class="was">For kids up to 6 years. Weather permitting.</span></div></div></div><div class="actions" style="margin-top:34px"><a class="btn sun" href="https://www.dineplan.com/widgetframe/PC45yY7k" target="_blank" rel="noopener">Book a session</a></div></div></section>
+</main>
+<footer>
+<div class="wrap">
+<span>© <span id="y"></span> The Playhouse Alberton. Concept design, not the official website. Prices and rules are as shown on the venue's own posters. Check the booking page for current rates.</span>
+<span><a href="https://theplayhouse.co.za/updates/">Updates</a> · <a href="https://theplayhouse.co.za/events/">Events</a> · <a href="https://theplayhouse.co.za/outreach/">Sunshine Programme</a></span>
+</div>
+</footer>
+<div class="dock">
+<a class="btn sun" href="https://www.dineplan.com/widgetframe/PC45yY7k" target="_blank" rel="noopener">Book a session</a>
+<a class="btn mint" href="https://wa.me/27119080096" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.7-4.8A9 9 0 1 1 8 19.3L3 21z"/><path d="M9 8c0 3.9 3.1 7 7 7l1.3-1.6-2.1-1.1-1 .9c-1-.5-2-1.4-2.5-2.5l.9-1-1.1-2.1L9 8z" fill="currentColor" stroke="none"/></svg>WhatsApp</a>
+</div>
+
+<script>document.getElementById("y").textContent=new Date().getFullYear();
+const SLIDE_OK=(function(){try{var c=document.createElement("canvas");c.width=c.height=40;var x=c.getContext("2d");x.textBaseline="top";x.font="32px sans-serif";x.fillText("\u{1F6DD}",0,0);var d=x.getImageData(0,0,40,40).data;for(var k=0;k<d.length;k+=4){if(d[k+3]>200&&(Math.abs(d[k]-d[k+1])>40||Math.abs(d[k+1]-d[k+2])>40))return true}return false}catch(e){return false}})();
+if(SLIDE_OK){document.querySelectorAll("svg.sl").forEach(function(el){el.replaceWith(document.createTextNode("\u{1F6DD}"))})}
+</script>
+</body>
+</html>
